@@ -1,0 +1,127 @@
+nohup: 忽略输入
+2024-04-28 20:41:02.750598: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:From /data/lei_li/anaconda3/envs/py38_tensorflow/lib/python3.8/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+======random seed done======
+all parameters: {'data_name': 'yelp', 'model_name': 'kd_diffnet', 'output_dir': './results', 'gpu': '0', 'social': 1, 'seed': 42, 'gamma': 0.1, 'kd': 0, 'topk': 100, 'learning_rate': 0.001, 'dimension': 64, 'patience': 40, 'batch_size': 5000, 'epochs': 1000, 'regu': 0.001, 'num_negatives': 8, 'num_users': 17220, 'num_items': 35351, 'gcn_layer': 2}
+System start to load data...
+Data has been loaded successfully, cost:7.1328s
+Data has been prepared successfully, cost:4.6033s
+Current model is kd_diffnet
+Model has been initialized successfully, cost:0.4186s
+Following will output the evaluation of the model:
+Epoch:1, compute loss cost:3.8821s, train loss:26892.3379, val loss:105696.3125, test loss:105806.3984
+Evaluate val cost:6.9147s, recall:0.1013, ndcg:0.0271, aggdiv:0.25335, entory:10.44750
+Evaluate test cost:4.5921s, recall:0.1051, ndcg:0.0281, aggdiv:0.25230, entory:10.44339
+Epoch:2, compute loss cost:3.3694s, train loss:23300.3535, val loss:78481.0625, test loss:78611.8906
+Evaluate val cost:3.9591s, recall:0.1182, ndcg:0.0316, aggdiv:0.11793, entory:9.73636
+Evaluate test cost:4.1723s, recall:0.1180, ndcg:0.0316, aggdiv:0.10919, entory:9.73031
+Epoch:3, compute loss cost:3.3307s, train loss:14570.3184, val loss:47669.7891, test loss:47646.1172
+Evaluate val cost:3.8702s, recall:0.1271, ndcg:0.0340, aggdiv:0.09363, entory:9.65103
+Evaluate test cost:4.1436s, recall:0.1267, ndcg:0.0343, aggdiv:0.08102, entory:9.64351
+Epoch:4, compute loss cost:3.1909s, train loss:8948.5391, val loss:35560.2734, test loss:35411.5078
+Evaluate val cost:3.8760s, recall:0.1342, ndcg:0.0364, aggdiv:0.08749, entory:9.62646
+Evaluate test cost:4.2279s, recall:0.1358, ndcg:0.0363, aggdiv:0.07491, entory:9.61646
+Epoch:5, compute loss cost:3.1707s, train loss:6787.7622, val loss:30784.4531, test loss:30539.8633
+Evaluate val cost:3.8895s, recall:0.1373, ndcg:0.0371, aggdiv:0.08795, entory:9.64467
+Evaluate test cost:4.1340s, recall:0.1366, ndcg:0.0368, aggdiv:0.07542, entory:9.63179
+Epoch:6, compute loss cost:3.2685s, train loss:5816.6465, val loss:28415.8242, test loss:28120.4082
+Evaluate val cost:3.8978s, recall:0.1395, ndcg:0.0386, aggdiv:0.09083, entory:9.65853
+Evaluate test cost:4.1474s, recall:0.1393, ndcg:0.0374, aggdiv:0.07824, entory:9.64536
+Epoch:7, compute loss cost:3.0783s, train loss:5222.1113, val loss:27028.5703, test loss:26739.8164
+Evaluate val cost:3.9042s, recall:0.1380, ndcg:0.0382, aggdiv:0.09567, entory:9.69301
+Epoch:8, compute loss cost:3.2051s, train loss:4830.5469, val loss:26119.6758, test loss:25818.1953
+Evaluate val cost:3.9964s, recall:0.1397, ndcg:0.0384, aggdiv:0.10254, entory:9.73667
+Evaluate test cost:4.3224s, recall:0.1404, ndcg:0.0376, aggdiv:0.09010, entory:9.72269
+Epoch:9, compute loss cost:3.3244s, train loss:4537.3447, val loss:25503.7734, test loss:25208.4102
+Evaluate val cost:3.9138s, recall:0.1408, ndcg:0.0387, aggdiv:0.10993, entory:9.76753
+Evaluate test cost:4.1533s, recall:0.1386, ndcg:0.0374, aggdiv:0.09788, entory:9.75280
+Epoch:10, compute loss cost:3.2737s, train loss:4309.2344, val loss:25023.6465, test loss:24751.4453
+Evaluate val cost:3.9389s, recall:0.1402, ndcg:0.0387, aggdiv:0.11717, entory:9.81967
+Epoch:11, compute loss cost:3.2398s, train loss:4071.3589, val loss:24697.0352, test loss:24419.9258
+Evaluate val cost:3.9143s, recall:0.1397, ndcg:0.0385, aggdiv:0.12367, entory:9.87796
+Epoch:12, compute loss cost:3.3312s, train loss:3902.4048, val loss:24460.5117, test loss:24102.6328
+Evaluate val cost:3.9302s, recall:0.1424, ndcg:0.0391, aggdiv:0.13369, entory:9.92397
+Evaluate test cost:4.1581s, recall:0.1430, ndcg:0.0381, aggdiv:0.12217, entory:9.90776
+Epoch:13, compute loss cost:3.1872s, train loss:3738.0967, val loss:24221.8906, test loss:23887.2734
+Evaluate val cost:3.9183s, recall:0.1412, ndcg:0.0389, aggdiv:0.14432, entory:9.99575
+Epoch:14, compute loss cost:3.2243s, train loss:3603.2366, val loss:24064.9531, test loss:23722.1543
+Evaluate val cost:3.9398s, recall:0.1387, ndcg:0.0384, aggdiv:0.15694, entory:10.07265
+Epoch:15, compute loss cost:3.1684s, train loss:3441.9590, val loss:23947.4453, test loss:23621.2461
+Evaluate val cost:3.9311s, recall:0.1410, ndcg:0.0388, aggdiv:0.16636, entory:10.14276
+Epoch:16, compute loss cost:3.1760s, train loss:3313.0132, val loss:23803.6641, test loss:23509.4023
+Evaluate val cost:3.9807s, recall:0.1394, ndcg:0.0384, aggdiv:0.17589, entory:10.21454
+Epoch:17, compute loss cost:3.2599s, train loss:3175.5688, val loss:23675.8262, test loss:23406.7617
+Evaluate val cost:3.9450s, recall:0.1403, ndcg:0.0384, aggdiv:0.18534, entory:10.25675
+Epoch:18, compute loss cost:3.1672s, train loss:3061.6848, val loss:23584.6113, test loss:23339.8184
+Evaluate val cost:3.9769s, recall:0.1408, ndcg:0.0386, aggdiv:0.19776, entory:10.32942
+Epoch:19, compute loss cost:3.1905s, train loss:2950.7886, val loss:23543.7480, test loss:23293.1934
+Evaluate val cost:3.9570s, recall:0.1377, ndcg:0.0386, aggdiv:0.20871, entory:10.39547
+Epoch:20, compute loss cost:3.2522s, train loss:2810.5276, val loss:23517.9062, test loss:23245.1855
+Evaluate val cost:4.0047s, recall:0.1401, ndcg:0.0391, aggdiv:0.22076, entory:10.45949
+Epoch:21, compute loss cost:3.1862s, train loss:2723.7222, val loss:23529.9453, test loss:23229.2109
+Evaluate val cost:4.0622s, recall:0.1387, ndcg:0.0388, aggdiv:0.23298, entory:10.52425
+Epoch:22, compute loss cost:3.1600s, train loss:2610.5125, val loss:23537.6406, test loss:23230.3008
+Evaluate val cost:4.0333s, recall:0.1381, ndcg:0.0388, aggdiv:0.24593, entory:10.58255
+Epoch:23, compute loss cost:3.1770s, train loss:2513.4421, val loss:23557.1719, test loss:23235.3691
+Evaluate val cost:4.0198s, recall:0.1396, ndcg:0.0390, aggdiv:0.25711, entory:10.63391
+Epoch:24, compute loss cost:3.2571s, train loss:2421.6331, val loss:23527.0352, test loss:23262.1582
+Evaluate val cost:4.0747s, recall:0.1404, ndcg:0.0393, aggdiv:0.26596, entory:10.68513
+Epoch:25, compute loss cost:3.2543s, train loss:2321.6365, val loss:23560.6953, test loss:23278.0430
+Evaluate val cost:4.0996s, recall:0.1390, ndcg:0.0389, aggdiv:0.27798, entory:10.74421
+Epoch:26, compute loss cost:3.4351s, train loss:2233.0667, val loss:23590.0781, test loss:23280.8750
+Evaluate val cost:4.0640s, recall:0.1391, ndcg:0.0388, aggdiv:0.28953, entory:10.81465
+Epoch:27, compute loss cost:3.1180s, train loss:2147.5757, val loss:23601.4688, test loss:23297.1172
+Evaluate val cost:4.0465s, recall:0.1386, ndcg:0.0386, aggdiv:0.30121, entory:10.88803
+Epoch:28, compute loss cost:3.1422s, train loss:2064.5103, val loss:23671.9492, test loss:23308.3125
+Evaluate val cost:4.0628s, recall:0.1399, ndcg:0.0388, aggdiv:0.31275, entory:10.94490
+Epoch:29, compute loss cost:3.2055s, train loss:1987.8367, val loss:23710.9297, test loss:23352.1602
+Evaluate val cost:4.0396s, recall:0.1417, ndcg:0.0391, aggdiv:0.32350, entory:11.00302
+Epoch:30, compute loss cost:3.2057s, train loss:1914.6970, val loss:23748.9414, test loss:23405.1758
+Evaluate val cost:4.0608s, recall:0.1404, ndcg:0.0386, aggdiv:0.33348, entory:11.04618
+Epoch:31, compute loss cost:3.1130s, train loss:1851.4655, val loss:23799.6211, test loss:23457.4219
+Evaluate val cost:4.0637s, recall:0.1390, ndcg:0.0382, aggdiv:0.34412, entory:11.09651
+Epoch:32, compute loss cost:3.2689s, train loss:1775.9211, val loss:23819.8594, test loss:23530.1055
+Evaluate val cost:4.0890s, recall:0.1406, ndcg:0.0388, aggdiv:0.35422, entory:11.14308
+Epoch:33, compute loss cost:3.1603s, train loss:1718.7429, val loss:23864.0352, test loss:23580.6523
+Evaluate val cost:4.0926s, recall:0.1394, ndcg:0.0387, aggdiv:0.36508, entory:11.17744
+Epoch:34, compute loss cost:3.1969s, train loss:1658.4904, val loss:23901.6309, test loss:23636.4688
+Evaluate val cost:4.0990s, recall:0.1381, ndcg:0.0384, aggdiv:0.37705, entory:11.23207
+Epoch:35, compute loss cost:3.1811s, train loss:1601.9659, val loss:23966.8867, test loss:23701.3340
+Evaluate val cost:4.0555s, recall:0.1378, ndcg:0.0385, aggdiv:0.38616, entory:11.27929
+Epoch:36, compute loss cost:3.1791s, train loss:1540.0956, val loss:24011.9141, test loss:23745.3281
+Evaluate val cost:4.0836s, recall:0.1365, ndcg:0.0381, aggdiv:0.39422, entory:11.33889
+Epoch:37, compute loss cost:3.1463s, train loss:1483.3420, val loss:24073.0820, test loss:23792.7227
+Evaluate val cost:4.0752s, recall:0.1363, ndcg:0.0381, aggdiv:0.40369, entory:11.38648
+Epoch:38, compute loss cost:3.2370s, train loss:1439.9176, val loss:24172.4570, test loss:23868.8828
+Evaluate val cost:4.0764s, recall:0.1366, ndcg:0.0378, aggdiv:0.41396, entory:11.43527
+Epoch:39, compute loss cost:3.2043s, train loss:1378.4358, val loss:24233.0898, test loss:23951.5508
+Evaluate val cost:4.1227s, recall:0.1337, ndcg:0.0373, aggdiv:0.42236, entory:11.47492
+Epoch:40, compute loss cost:3.2904s, train loss:1339.6547, val loss:24323.1230, test loss:24021.9785
+Evaluate val cost:4.1430s, recall:0.1339, ndcg:0.0375, aggdiv:0.43388, entory:11.51168
+Epoch:41, compute loss cost:3.2427s, train loss:1299.8802, val loss:24389.1582, test loss:24087.4414
+Evaluate val cost:4.1492s, recall:0.1359, ndcg:0.0380, aggdiv:0.44265, entory:11.54161
+Epoch:42, compute loss cost:3.2572s, train loss:1259.0442, val loss:24450.8711, test loss:24172.5996
+Evaluate val cost:4.1940s, recall:0.1369, ndcg:0.0379, aggdiv:0.45156, entory:11.57571
+Epoch:43, compute loss cost:3.3214s, train loss:1208.5945, val loss:24524.3652, test loss:24250.4688
+Evaluate val cost:4.3078s, recall:0.1355, ndcg:0.0379, aggdiv:0.45928, entory:11.60943
+Epoch:44, compute loss cost:3.4531s, train loss:1176.7744, val loss:24601.2266, test loss:24316.9766
+Evaluate val cost:4.8318s, recall:0.1357, ndcg:0.0378, aggdiv:0.46839, entory:11.64509
+Epoch:45, compute loss cost:3.4324s, train loss:1136.7799, val loss:24641.0586, test loss:24386.9258
+Evaluate val cost:4.1497s, recall:0.1355, ndcg:0.0379, aggdiv:0.47571, entory:11.67747
+Epoch:46, compute loss cost:3.5548s, train loss:1101.2002, val loss:24711.9531, test loss:24457.0859
+Evaluate val cost:4.1769s, recall:0.1369, ndcg:0.0380, aggdiv:0.48448, entory:11.71860
+Epoch:47, compute loss cost:3.5347s, train loss:1061.9205, val loss:24774.7734, test loss:24538.5801
+Evaluate val cost:4.1523s, recall:0.1365, ndcg:0.0382, aggdiv:0.48997, entory:11.75468
+Epoch:48, compute loss cost:3.4776s, train loss:1037.9087, val loss:24849.6641, test loss:24596.9141
+Evaluate val cost:4.8349s, recall:0.1337, ndcg:0.0376, aggdiv:0.49860, entory:11.79937
+Epoch:49, compute loss cost:3.5134s, train loss:1010.7815, val loss:24932.3203, test loss:24672.8730
+Evaluate val cost:4.1148s, recall:0.1344, ndcg:0.0378, aggdiv:0.50669, entory:11.83940
+Epoch:50, compute loss cost:3.4344s, train loss:972.7352, val loss:24990.9961, test loss:24779.2109
+Evaluate val cost:4.1232s, recall:0.1344, ndcg:0.0372, aggdiv:0.51498, entory:11.86957
+Epoch:51, compute loss cost:3.2572s, train loss:938.0031, val loss:25068.5723, test loss:24848.0664
+Evaluate val cost:4.1017s, recall:0.1344, ndcg:0.0372, aggdiv:0.52208, entory:11.88356
+Epoch:52, compute loss cost:3.2436s, train loss:911.4974, val loss:25142.2812, test loss:24929.0312
+Evaluate val cost:3.9639s, recall:0.1348, ndcg:0.0372, aggdiv:0.52643, entory:11.90042
+Early stop at epoch:52, best test performance, epoch:12, recall:0.14302, ndcg:0.03812, aggdiv:0.12217, entory:9.90776

@@ -5,6 +5,9 @@ from DataUtil import DataUtil
 from Evaluate import Evaluate
 from util import init_seed
 import train as starter
+from models.kd_trustmf import kd_trustmf
+from models.kd_socialmf import kd_socialmf
+from models.kd_mhcn import kd_mhcn
 
 def executeTrainModel(config_path, para):
     #print('System start to prepare parser config file...')

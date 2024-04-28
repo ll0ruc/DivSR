@@ -2,10 +2,6 @@ import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 import numpy as np
 from scipy.sparse import coo_matrix
-from math import sqrt
-import gc
-from time import time
-from layer import KD_Loss
 
 
 class kd_mhcn():
@@ -90,7 +86,10 @@ class kd_mhcn():
         A8 = (Y.dot(Y.T)).multiply(B)
         A9 = (Y.dot(Y.T)).multiply(U)
         A9 = A9 + A9.T
-        A10 = Y.dot(Y.T) - A8 - A9
+        if self.conf.social == 1:
+            A10 = Y.dot(Y.T) - A8 - A9
+        else:
+            A10 = Y.dot(Y.T)
         H_s = sum([A1, A2, A3, A4, A5, A6, A7])
         H_s = H_s.multiply(1.0 / (H_s.sum(axis=1).reshape(-1, 1)))
         H_j = sum([A8, A9])
