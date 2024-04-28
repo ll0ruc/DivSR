@@ -18,20 +18,13 @@ pip install -r requirements.txt
 
 ## train a SocialRS (w/o social) as the teacher model (e.g. DiffNet)
 ```
-python main.py --data_name yelp --model_name kd_diffnet --social 0
+python entry.py --data_name yelp --model_name kd_diffnet --social 0
 ```
 
-## train a SocialRS as the student model (e.g. DiffNet)
-
-Train Ada-Ranker in the second-stage.
-You need fit the `is_adaretrieval=1` and `load_best_model=1` to download your pre-trained model in the first stage
-(notice that the model_file path should be consistent with the generated model in the first stage)
-
+## train a SocialRS as the student model (e.g. KD-DiffNet)
 ```
-python main.py --data_name yelp --model_name kd_diffnet --kd 1 --social 1 --gamma 1.0
+python entry.py --data_name yelp --model_name kd_diffnet --kd 1 --social 1 --gamma 1.0
 ```
-
-See more details of main files in `Main/`.
 
 # Output
 Output path will be like this:
