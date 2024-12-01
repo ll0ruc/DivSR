@@ -1,8 +1,4 @@
 nohup: 忽略输入
-2024-04-28 21:07:43.254941: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
-WARNING:tensorflow:From /data/lei_li/anaconda3/envs/py38_tensorflow/lib/python3.8/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
-Instructions for updating:
-non-resource variables are not supported in the long term
 ======random seed done======
 all parameters: {'data_name': 'yelp', 'model_name': 'kd_diffnet', 'output_dir': './results', 'gpu': '0', 'social': 1, 'seed': 42, 'gamma': 1.0, 'kd': 1, 'topk': 100, 'learning_rate': 0.001, 'dimension': 64, 'patience': 40, 'batch_size': 5000, 'epochs': 1000, 'regu': 0.001, 'num_negatives': 8, 'num_users': 17220, 'num_items': 35351, 'gcn_layer': 2}
 System start to load data...
