@@ -1,6 +1,6 @@
 # DivSR
 
-This is our Tensorflow implementation for Enhancing Diversity on Social Recommendation with Knowledge Distillation
+This is our Tensorflow implementation for Leave No One Behind: Enhancing Diversity While Maintaining Accuracy in Social Recommendation
 
 # Requirements
 Environments:
