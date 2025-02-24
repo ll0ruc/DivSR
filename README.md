@@ -1,6 +1,6 @@
 # DivSR
 
-This is our Tensorflow implementation for Leave No One Behind: Enhancing Diversity While Maintaining Accuracy in Social Recommendation
+This is our Tensorflow implementation for Leave No One Behind: Enhancing Diversity While Maintaining Accuracy in Social Recommendation (accepted in [DASFAA2025](https://dasfaa2025.github.io/)).
 
 # Requirements
 Environments:
@@ -45,3 +45,15 @@ We have placed the processed data in the /data directory.
 
 Social backbones (TrustMF, SocialMF, DiffNet, MHCN), are developed based on [QRec](https://github.com/Coder-Yu/QRec).
 DESIGN is developed based on [DESIGN](https://www.dropbox.com/s/uqmsr67wqurpnre/Supplementary%20Material.zip?dl=0)
+
+# Acknowledgement
+Any scientific publications that use our codes and datasets should cite the following paper as the reference:
+```
+@article{li2025leave,
+  title={Leave No One Behind: Enhancing Diversity While Maintaining Accuracy in Social Recommendation},
+  author={Li, Lei and Zhou, Xiao},
+  journal={arXiv preprint arXiv:2502.11374},
+  year={2025}
+}
+```
+
